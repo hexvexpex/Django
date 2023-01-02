@@ -1,7 +1,6 @@
 from products.models import Product
 from products.serializers import ProductSerializer
 from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 # Create your views here.
 

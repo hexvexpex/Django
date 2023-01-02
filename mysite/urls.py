@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Includes file urls.py from my app named 'products'.
     # I will need this to not flood this file with too many urls,
     # especially when I'll have more apps.
-    path('', include('products.urls'))
+    path('', include('products.urls')),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
