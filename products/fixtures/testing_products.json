@@ -1,0 +1,26 @@
+[
+  {
+    "model": "products.Product",
+    "pk": 1,
+    "fields": {
+      "pr_name": "testname",
+      "pr_cost": 1000.00,
+      "pr_amount": 4,
+      "pr_description": "Test description",
+      "pr_date": "2023-01-03"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 2,
+    "fields": {
+      "pr_name": "testname_2",
+      "pr_cost": 2000.00,
+      "pr_amount": 8,
+      "pr_description": "Test description 2",
+      "pr_date": "2023-01-03"
+    }
+  }
+]
+
+
